@@ -13,8 +13,7 @@ export default function AuthLayout({
   return (
     <div className="grid grid-cols-2 h-screen">
       <div>{children}</div>
-        <div className="bg-cyan-200 w-full"></div>
-      
+      <div className="bg-cyan-200 w-full"></div>
     </div>
   );
 }
