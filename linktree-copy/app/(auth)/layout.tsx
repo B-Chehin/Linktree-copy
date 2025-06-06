@@ -11,9 +11,9 @@ export default function AuthLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="grid grid-cols-2 h-screen">
-      <div>{children}</div>
-      <div className="bg-cyan-200 w-full"></div>
+    <div className="grid grid-cols-1 h-screen md:grid-cols-2">
+      <div className="flex flex-col items-center justify-center">{children}</div>
+      <div className="bg-[url('/bg-login.png')] bg-no-repeat bg-cover h-full w-full hidden md:block"></div>
     </div>
   );
 }
